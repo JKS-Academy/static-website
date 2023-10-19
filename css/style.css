@@ -173,6 +173,25 @@ i:before {
 /*----------------------------------------------------*/
 /* Main Menu Area css
 ============================================================================================ */
+
+#mainLogo {
+  width: 8rem;
+}
+
+#contactUsLink {
+  line-height: normal;
+  padding: 1.5em;
+}
+
+.icon-more-btn {
+  display: flex !important;
+  align-items: center;
+}
+
+.nav-link .active {
+  color: #e92928 !important;
+}
+
 .main_menu_area {
   position: absolute;
   left: 0px;
@@ -302,7 +321,7 @@ i:before {
 }
 
 .main_menu_area .navbar .navbar-nav li:hover a, .main_menu_area .navbar .navbar-nav li.active a {
-  color: #0b1033;
+  color: #e92928;
 }
 
 .main_menu_area.navbar_fixed {

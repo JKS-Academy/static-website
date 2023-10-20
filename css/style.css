@@ -345,7 +345,8 @@ i:before {
 }
 
 .main_menu_area.navbar_fixed {
-  background-color: rgba(255, 255, 255, 0.9) !important;
+  background-color: rgba(255, 255, 255, 0.5) !important;
+  backdrop-filter: blur(10px);
 }
 
 .main_menu_area .navbar .navbar-nav li a {

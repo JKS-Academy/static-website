@@ -669,27 +669,9 @@
     <!--================End Team People Area =================-->
 
     <!--================Get in Touch Area =================-->
-    <section class="get_in_touch_area">
-        <div class="container" style="position: relative; background-color: rgba(255, 255, 255, 0.5); border-radius: 10px; padding: 2rem;-webkit-box-shadow: 0px 14px 38px 0px rgba(0, 0, 0, 0.11);
-            box-shadow: 0px 14px 38px 0px rgba(0, 0, 0, 0.11);">
+    <section class="get_in_touch_area" style="position: relative;">
+        <div id="contactUs" class="container">
             <div class="row get_touch_inner">
-                <svg viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"
-                    style="position: absolute; top: -450; left: 250; z-index: -100;">
-                    <defs>
-                        <linearGradient id="b" gradientTransform="rotate(-45 .5 .5)">
-                            <stop offset="0%" stop-color="#00DBDE" />
-                            <stop offset="100%" stop-color="#FC00FF" />
-                        </linearGradient>
-                        <clipPath id="a">
-                            <path fill="currentColor"
-                                d="M765 612Q629 724 479 760T224 648q-105-148-6.5-307.5t282-158.5Q683 183 792 341.5T765 612Z" />
-                        </clipPath>
-                    </defs>
-                    <g clip-path="url(#a)">
-                        <path fill="url(#b)" style="filter: blur(50px);"
-                            d="M765 612Q629 724 479 760T224 648q-105-148-6.5-307.5t282-158.5Q683 183 792 341.5T765 612Z" />
-                    </g>
-                </svg>
                 <div class="col-lg-6">
                     <form class="contact_us_form row" action="contact_process.php" method="post" id="contactForm"
                         novalidate="novalidate">
@@ -728,6 +710,23 @@
                 </div>
             </div>
         </div>
+        <svg viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"
+            style="position: absolute; top: -350; left: 450; z-index: -100;">
+            <defs>
+                <linearGradient id="b" gradientTransform="rotate(-45 .5 .5)">
+                    <stop offset="0%" stop-color="#00DBDE" />
+                    <stop offset="100%" stop-color="#FC00FF" />
+                </linearGradient>
+                <clipPath id="a">
+                    <path fill="currentColor"
+                        d="M765 612Q629 724 479 760T224 648q-105-148-6.5-307.5t282-158.5Q683 183 792 341.5T765 612Z" />
+                </clipPath>
+            </defs>
+            <g clip-path="url(#a)">
+                <path fill="url(#b)" style="filter: blur(50px);"
+                    d="M765 612Q629 724 479 760T224 648q-105-148-6.5-307.5t282-158.5Q683 183 792 341.5T765 612Z" />
+            </g>
+        </svg>
     </section>
     <!--================End Get in Touch Area =================-->
 
@@ -753,7 +752,7 @@
             </svg>
             <div class="world_map_inner">
                 <h1>Location</h1>
-                <img class="world-image" src="img/world-map.png" alt="">
+                <img class="world-image" src="img/world-map.png" alt="world-image">
             </div>
             <div class="row maps-container">
                 <div class="col-12 col-lg-6">
@@ -761,7 +760,7 @@
                         <h3>JKS Academy, Dubai Digital Park, Residence D3, DSO, UAE</h3>
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14449.983933753538!2d55.3763681!3d25.1189173!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f65bd0cd1002d%3A0xdd4f0f3008ed324d!2sJKS%20Academy!5e0!3m2!1sen!2sae!4v1697803677442!5m2!1sen!2sae"
-                            width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                            width="90%" height="90%" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
@@ -770,7 +769,7 @@
                         <h3>Administrative Office, Saheel Tower 2, Al Qusais, Dubai, UAE</h3>
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1803.7800205520978!2d55.3601886!3d25.2853814!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6dec1f01297050c7%3A0x5765119b78588a89!2sJKS%20Academy%20Administrative%20Office!5e0!3m2!1sen!2sae!4v1697804603941!5m2!1sen!2sae"
-                            width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                            width="90%" height="90%" style="border:0;" allowfullscreen="" loading="lazy"
                             referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
@@ -784,31 +783,44 @@
         <div class="footer_widget_area">
             <div class="container">
                 <div class="row footer_widget_inner">
-                    <div class="col-lg-4 col-sm-6">
+                    <div class="col-lg-5 col-12">
                         <aside class="f_widget f_about_widget">
-                            <img src="img/footer-logo.png" alt="">
-                            <p>Cras ex mauris, ornare eget pretium sit amet, dignissim et turpis. Nunc nec maximus dui,
-                                vel suscipit dolor. Donec elementum velit a orci facilisis rutrum.</p>
+                            <img id="footerLogo" src="img/logo/logo-transparent.png" alt="">
+                            <p>Discover Karate Excellence at JKS Academy. Empowering Individuals Through Martial Arts.
+                            </p>
                         </aside>
+                        <hr>
+                        <div class="row footer-links">
+                            <div class="col-12 col-lg-6">
+                                <a class="footer-link" target="_blank" href="https://wa.me/+971585825001">
+                                    +971 58 5825001
+                                </a>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <a class="footer-link" target="_blank" href="mailto:jksacademy2023@gmail.com">
+                                    jksacademy2023@gmail.com
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6">
+                    <div class="col-lg-4 col-12">
                         <aside class="f_widget f_insta_widget">
                             <div class="f_title">
-                                <h3>Instagram</h3>
+                                <h2 class="text-white">Approved By,</h2>
                             </div>
-                            <ul>
-                                <li><a href="#"><img src="img/instagram/ins-1.jpg" alt=""></a></li>
-                                <li><a href="#"><img src="img/instagram/ins-2.jpg" alt=""></a></li>
-                                <li><a href="#"><img src="img/instagram/ins-3.jpg" alt=""></a></li>
-                                <li><a href="#"><img src="img/instagram/ins-4.jpg" alt=""></a></li>
-                                <li><a href="#"><img src="img/instagram/ins-5.jpg" alt=""></a></li>
-                                <li><a href="#"><img src="img/instagram/ins-6.jpg" alt=""></a></li>
-                                <li><a href="#"><img src="img/instagram/ins-7.jpg" alt=""></a></li>
-                                <li><a href="#"><img src="img/instagram/ins-8.jpg" alt=""></a></li>
-                            </ul>
+                            <div class="d-flex gap-3">
+                                <a class="p-2" href="http://www.uaekaratefederation.ae/main">
+                                    <img class="footer-logos" src="img/logo/uae-kf-logo-white.jpg"
+                                        alt="JKS Academy Logo">
+                                </a>
+                                <a class="p-2" href="http://jkskarate.com">
+                                    <img class="footer-logos" src="img/logo/jks-uae-logo-white.jpg"
+                                        alt="JKS Academy Logo">
+                                </a>
+                            </div>
                         </aside>
                     </div>
-                    <div class="col-lg-4 col-sm-6">
+                    <div class="col-lg-3 col-12">
                         <aside class="f_widget f_subs_widget">
                             <div class="f_title">
                                 <h3>Subscribe to newsletter</h3>
@@ -830,19 +842,14 @@
                 <div class="float-sm-left">
                     <h5><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         Copyright &copy;
-                        <script>document.write(new Date().getFullYear());</script> All rights reserved | This template
-                        is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com"
-                            target="_blank">Colorlib</a>
+                        2023 All rights reserved to <a href="/">JKS Academy</a>
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     </h5>
                 </div>
                 <div class="float-sm-right">
                     <ul>
-                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
                         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                        <li><a href="#"><i class="fa fa-behance"></i></a></li>
                         <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                     </ul>
                 </div>

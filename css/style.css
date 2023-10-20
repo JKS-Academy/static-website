@@ -1571,17 +1571,22 @@ i:before {
   position: relative;
 }
 
+.world-image {
+  position: absolute;
+  left: 0;
+}
+
+.maps-container {
+  margin-top: 2rem;
+}
+
 .bd-callout {
   text-align: left;
-  position: absolute;
-  left: 30px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  position: relative;
   max-width: 550px;
   width: 100%;
-  background: #fff;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
   -webkit-box-shadow: 0px 0px 46px 15px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0px 0px 46px 15px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 0px 46px 15px rgba(0, 0, 0, 0.15);
@@ -1597,7 +1602,7 @@ i:before {
   border-top: 0px;
   border-bottom: 0px;
   border-right: 0px;
-  padding-left: 70px;
+  padding-left: 2rem;
   padding-top: 35px;
   padding-bottom: 35px;
 }

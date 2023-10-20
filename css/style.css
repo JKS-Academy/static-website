@@ -36,6 +36,11 @@ Table of Content:
 /*Color Variables*/
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,900");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700");
+
+html * {
+  scroll-behavior: smooth !important;
+}
+
 .col-md-offset-right-1, .col-lg-offset-right-1 {
   margin-right: 8.33333333%;
 }
@@ -598,10 +603,19 @@ i:before {
 
 .feature_item {
   text-align: center;
-  padding: 40px 0px 60px 0px;
+  padding: 20px;
   -webkit-transition: all 400ms linear 0s;
   -o-transition: all 400ms linear 0s;
   transition: all 400ms linear 0s;
+  backdrop-filter: blur(10px); background-color: rgba(255, 255, 255, 0.5); border-radius: 10px;
+}
+
+.feature_item p {
+  color: rgba(11, 16, 51, 0.7) !important;
+}
+
+.c_title h6 {
+  color: rgba(11, 16, 51, 0.7) !important;
 }
 
 .feature_item .f_icon {

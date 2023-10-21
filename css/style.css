@@ -1380,6 +1380,7 @@ i:before {
 .submit_btn:hover {
   background-position: right center;
   color: #fff;
+  cursor: pointer;
 }
 
 .submit_btn:focus {
@@ -2451,11 +2452,10 @@ i:before {
   border-radius: 0px;
   border: none;
   height: 52px;
-  padding: 0px 30px;
   font-size: 12px;
   font-family: "Roboto", sans-serif;
   font-style: italic;
-  color: #9b9b9b;
+  color: #0b1033;
 }
 
 .f_subs_widget .input-group input.placeholder {
@@ -2499,6 +2499,7 @@ i:before {
 
 .f_subs_widget .input-group .input-group-btn .submit_btn:hover {
   border-color: #8cc4fb;
+  cursor: pointer;
 }
 
 .footer_copyright {

@@ -29,6 +29,8 @@ const newsLetter = () => {
 function closeToast() {
     let toast = document.getElementById("toast");
     toast.style.transform = "translateX(-35rem)";
+    let wrapper = document.getElementById("wrapper");
+    wrapper.style.zIndex = "-1";
 }
 
 document.addEventListener('DOMContentLoaded', () => {

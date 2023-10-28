@@ -30,7 +30,9 @@ function closeToast() {
     let toast = document.getElementById("toast");
     toast.style.transform = "translateX(-35rem)";
     let wrapper = document.getElementById("wrapper");
-    wrapper.style.zIndex = "-1";
+    setTimeout(() => {
+        wrapper.style.zIndex = "1";
+    }, 1000);
 }
 
 document.addEventListener('DOMContentLoaded', () => {

@@ -1,0 +1,165 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+
+/* Width, height, and color of scrollbar track */
+::-webkit-scrollbar {
+    width: 8px;
+    /* width of the scrollbar */
+    height: 8px;
+    /* height of the scrollbar */
+}
+
+/* Track (background of the scrollbar) */
+::-webkit-scrollbar-track {
+    background: #001f3f;
+    /* navy blue color */
+    border-radius: 10px;
+    /* curved border radius */
+}
+
+/* Handle (thumb) */
+::-webkit-scrollbar-thumb {
+    background: #0074D9;
+    /* navy blue color for the thumb */
+    border-radius: 10px;
+    /* curved border radius */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #005ca9;
+    /* darker shade on hover */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1f1f1f;
+    color: #d7d7d7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+
+a {
+    color: #d7d7d7;
+}
+
+.container a {
+    text-decoration: none;
+    color: #d7d7d7;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    overflow-y: auto;
+    margin-bottom: 2rem;
+    width: 100vw;
+}
+
+.social-card {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px;
+    width: 90vw;
+    border-radius: 8px;
+    border: 2px solid;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+}
+
+.icon {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon img {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.username {
+    font-weight: bold;
+}
+
+#twitterCard {
+    border-color: #fff;
+}
+
+#twitterCard:hover {
+    box-shadow: 0 0 10px 5px #fff;
+}
+
+#facebookCard {
+    border-color: #1877f2;
+    /* Facebook color */
+}
+
+#facebookCard:hover {
+    box-shadow: 0 0 10px 5px #1877f2;
+    background: linear-gradient(90deg, #04a0f4 0%, #1877f2 100%);
+}
+
+#tiktokCard {
+    border-color: #00f2ea;
+}
+
+#tiktokCard:hover {
+    box-shadow: 0 0 10px 5px #00f2ea;
+    background: linear-gradient(90deg, #ff0050 0%, #00f2ea 50%, #000 100%);
+}
+
+#youtubeCard {
+    border-color: #ff0000;
+}
+
+#youtubeCard:hover {
+    box-shadow: 0 0 10px 5px #ff0000;
+    background: linear-gradient(90deg, #980101 0%, #ff0000 100%);
+}
+
+#instagramCard {
+    border-color: #833AB4;
+}
+
+#instagramCard:hover {
+    box-shadow: 0 0 10px 5px #c13584;
+    background: linear-gradient(90deg, #FFCB52 0%, #FF543E 30%, #BD329C 100%);
+    color: #833AB4;
+}
+
+#linkedinCard {
+    border-color: #0a66c2;
+}
+
+#linkedinCard:hover {
+    box-shadow: 0 0 10px 5px #0a66c2;
+    background: linear-gradient(90deg, rgb(77, 193, 255) 0%, #0a66c2 100%);
+}
+
+#whatsappCard {
+    border-color: #25d366;
+}
+
+#whatsappCard:hover {
+    box-shadow: 0 0 10px 5px #128c7e;
+    background: linear-gradient(90deg, #128c7e 0%, #25d366 100%);
+}
+
+#title {
+    text-align: center;
+}

@@ -78,10 +78,6 @@ a {
     transition: box-shadow 0.3s;
 }
 
-.social-card:hover {
-    box-shadow: 0 0 15px 5px #eb393a;
-}
-
 .icon {
     width: 3rem;
     height: 3rem;
@@ -104,29 +100,57 @@ a {
     border-color: #fff;
 }
 
+#twitterCard:hover {
+    box-shadow: 0 0 15px 5px #fff;
+}
+
 #facebookCard {
     border-color: #1877f2;
     /* Facebook color */
+}
+
+#facebookCard:hover {
+    box-shadow: 0 0 15px 5px #1877f2;
 }
 
 #tiktokCard {
     border-color: #00f2ea;
 }
 
+#tiktokCard:hover {
+    box-shadow: 0 0 15px 5px #00f2ea;
+}
+
 #youtubeCard {
     border-color: #ff0000;
+}
+
+#youtubeCard:hover {
+    box-shadow: 0 0 15px 5px #ff0000;
 }
 
 #instagramCard {
     border-color: #833AB4;
 }
 
+#instagramCard:hover {
+    box-shadow: 0 0 15px 5px #c13584;
+}
+
 #linkedinCard {
     border-color: #0a66c2;
 }
 
+#linkedinCard:hover {
+    box-shadow: 0 0 15px 5px #0a66c2;
+}
+
 #whatsappCard {
     border-color: #25d366;
+}
+
+#whatsappCard:hover {
+    box-shadow: 0 0 15px 5px #128c7e;
 }
 
 #title {

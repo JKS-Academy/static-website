@@ -46,4 +46,20 @@ document.addEventListener('DOMContentLoaded', () => {
         // }, 4000);
     }
     showToast();
+
+    let statCounters = document.querySelectorAll(".stat-count-number");
+    let interval = 2500;
+
+    statCounters.forEach((counter) => {
+        let startValue = 0;
+        let endValue = parseInt(counter.innerText);
+        let duration = Math.floor(interval / endValue);
+        let counting = setInterval(() => {
+            startValue++;
+            counter.textContent = startValue;
+            if (startValue == endValue) {
+                clearInterval(counting);
+            }
+        }, duration);
+    })
 });

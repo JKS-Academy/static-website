@@ -26,24 +26,33 @@ const newsLetter = () => {
     }
 }
 
+let toastOpen = true;
+
+function toast() {
+    if (toastOpen) {
+        closeToast();
+    } else {
+        showToast();
+    }
+}
+
 function closeToast() {
-    let toast = document.getElementById("toast");
-    toast.style.transform = "translateX(-35rem)";
     let wrapper = document.getElementById("wrapper");
-    setTimeout(() => {
-        wrapper.style.zIndex = "1";
-    }, 1000);
+    wrapper.style.transform = "translateX(-32rem)";
+    let closeButton = document.getElementById("close");
+    closeButton.style.transform = "rotate(180deg)";
+    toastOpen = false;
+}
+function showToast() {
+    let toast = document.getElementById("toast");
+    let wrapper = document.getElementById("wrapper");
+    toast.style.transform = "translateX(0)";
+    wrapper.style.transform = "translateX(0)";
+    let closeButton = document.getElementById("close");
+    closeButton.style.transform = "rotate(0)";
+    toastOpen = true;
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    let x;
-    let toast = document.getElementById("toast");
-    function showToast() {
-        // clearTimeout(x);
-        toast.style.transform = "translateX(0)";
-        // x = setTimeout(() => {
-        //     toast.style.transform = "translateX(400px)"
-        // }, 4000);
-    }
     showToast();
 });

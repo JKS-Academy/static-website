@@ -81,6 +81,7 @@ a:focus {
     left: 0;
     overflow: hidden;
     z-index: 999999;
+    transition: 1s;
 }
 #show-toast{
     position: absolute;
@@ -119,6 +120,8 @@ a:focus {
   align-items: center;
   padding: 0.2rem;
   cursor: pointer;
+  z-index: 100!important;
+  transition: 1s;
 }
 
 #close:hover {

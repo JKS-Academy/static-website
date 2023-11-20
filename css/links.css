@@ -62,8 +62,8 @@ a {
     align-items: center;
     justify-content: space-between;
     overflow-y: auto;
-    padding: 0 1.5rem;
     margin-bottom: 2rem;
+    width: 100vw;
 }
 
 .social-card {
@@ -101,7 +101,7 @@ a {
 }
 
 #twitterCard:hover {
-    box-shadow: 0 0 15px 5px #fff;
+    box-shadow: 0 0 10px 5px #fff;
 }
 
 #facebookCard {
@@ -110,7 +110,8 @@ a {
 }
 
 #facebookCard:hover {
-    box-shadow: 0 0 15px 5px #1877f2;
+    box-shadow: 0 0 10px 5px #1877f2;
+    background: linear-gradient(90deg, #04a0f4 0%, #1877f2 100%);
 }
 
 #tiktokCard {
@@ -118,7 +119,8 @@ a {
 }
 
 #tiktokCard:hover {
-    box-shadow: 0 0 15px 5px #00f2ea;
+    box-shadow: 0 0 10px 5px #00f2ea;
+    background: linear-gradient(90deg, #ff0050 0%, #00f2ea 50%, #000 100%);
 }
 
 #youtubeCard {
@@ -126,7 +128,8 @@ a {
 }
 
 #youtubeCard:hover {
-    box-shadow: 0 0 15px 5px #ff0000;
+    box-shadow: 0 0 10px 5px #ff0000;
+    background: linear-gradient(90deg, #980101 0%, #ff0000 100%);
 }
 
 #instagramCard {
@@ -134,7 +137,9 @@ a {
 }
 
 #instagramCard:hover {
-    box-shadow: 0 0 15px 5px #c13584;
+    box-shadow: 0 0 10px 5px #c13584;
+    background: linear-gradient(90deg, #FFCB52 0%, #FF543E 30%, #BD329C 100%);
+    color: #833AB4;
 }
 
 #linkedinCard {
@@ -142,7 +147,8 @@ a {
 }
 
 #linkedinCard:hover {
-    box-shadow: 0 0 15px 5px #0a66c2;
+    box-shadow: 0 0 10px 5px #0a66c2;
+    background: linear-gradient(90deg, rgb(77, 193, 255) 0%, #0a66c2 100%);
 }
 
 #whatsappCard {
@@ -150,7 +156,8 @@ a {
 }
 
 #whatsappCard:hover {
-    box-shadow: 0 0 15px 5px #128c7e;
+    box-shadow: 0 0 10px 5px #128c7e;
+    background: linear-gradient(90deg, #128c7e 0%, #25d366 100%);
 }
 
 #title {

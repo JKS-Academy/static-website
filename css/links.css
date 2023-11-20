@@ -2,6 +2,38 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Custom Scrollbar */
+
+/* Width, height, and color of scrollbar track */
+::-webkit-scrollbar {
+    width: 8px;
+    /* width of the scrollbar */
+    height: 8px;
+    /* height of the scrollbar */
+}
+
+/* Track (background of the scrollbar) */
+::-webkit-scrollbar-track {
+    background: #001f3f;
+    /* navy blue color */
+    border-radius: 10px;
+    /* curved border radius */
+}
+
+/* Handle (thumb) */
+::-webkit-scrollbar-thumb {
+    background: #0074D9;
+    /* navy blue color for the thumb */
+    border-radius: 10px;
+    /* curved border radius */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #005ca9;
+    /* darker shade on hover */
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -16,6 +48,10 @@ body {
 }
 
 a {
+    color: #d7d7d7;
+}
+
+.container a {
     text-decoration: none;
     color: #d7d7d7;
 }
@@ -27,6 +63,7 @@ a {
     justify-content: space-between;
     overflow-y: auto;
     padding: 0 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .social-card {
@@ -94,8 +131,4 @@ a {
 
 #title {
     text-align: center;
-}
-
-#mainLogo {
-    width: 10rem;
 }

@@ -2,32 +2,6 @@
     margin-top: 8rem;
 }
 
-#faqArea .card {
-    box-shadow: 0 0 5px rgb(0, 123, 255, 0.5);
-}
-
-#faqArea .card .card-header {
-    background: rgb(0, 123, 255, 0.5);
-    border: none;
-    backdrop-filter: blur(10px);
-    cursor: pointer;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#faqArea .card-body {
-    background-color: rgb(255, 255, 255, 0.5);
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
-}
-
-.accordion {
-    background: rgba(0, 0, 0, 0);
-    border-radius: 10px;
-}
-
 #contactUs {
     margin-bottom: 5rem;
 }

@@ -1783,8 +1783,9 @@ i:before {
 }
 
 #faqArea .card .card-header {
-  background: rgb(0, 123, 255, 0.9);
+  background: linear-gradient(to right, #6ebcfe 0%, #9b8aff 100%);
   border-color: rgb(0, 123, 255, 0.9);
+  border: none;
   backdrop-filter: blur(10px);
   cursor: pointer;
   color: white;

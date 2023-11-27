@@ -1758,6 +1758,27 @@ i:before {
 
 /* End Contact Map Area css
 ============================================================================================ */
+/* FAQ Area css
+============================================================================================ */
+#faqArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.faq-inner {
+  width: 100%;
+}
+
+#moreFAQButton {
+  display: flex;
+  justify-content: center;
+}
+
 /* Contact Success and error Area css
 ============================================================================================ */
 .modal-message .modal-dialog {
